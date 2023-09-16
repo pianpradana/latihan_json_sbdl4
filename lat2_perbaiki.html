@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tenaga Kesehatan</title>
+</head>
+<body>
+    <h1>Data Tenaga Kesehatan</h1>
+    <table border="1" id="tbBaru">
+        <thead>
+            <tr>
+                <th>Tahun</th>
+                <th>Wilayah</th>
+                <th>Tenaga Kesehatan</th>
+                <th>Jumlah</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row data bertambah disini -->
+        </tbody>
+    </table>
+    <button onclick="tambahDataBaru()" id="tambahRow">Tambah Row</button>
+
+    <script>
+        // Data JSON yang diberikan
+        var jsonData = {
+            "nakes2018": [
+{
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Dokter",
+            "jumlah": 53
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Perawat",
+            "jumlah": 80
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Bidan",
+            "jumlah": 50
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Farmasi",
+            "jumlah": 14
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Ahli Gizi",
+            "jumlah": 6
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Dokter",
+            "jumlah": 4006
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Perawat",
+            "jumlah": 6227
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Bidan",
+            "jumlah": 1496
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Farmasi",
+            "jumlah": 1610
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Ahli Gizi",
+            "jumlah": 192
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Timur",
+            "tenaga_kesehatan": "Dokter",
+            "jumlah": 3244
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Timur",
+            "tenaga_kesehatan": "Perawat",
+            "jumlah": 5439
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Timur",
+            "tenaga_kesehatan": "Bidan",
+            "jumlah": 1566
+        },
+                // Tambahkan data lainnya di sini
+            ]
+        };
+
+        var currentIndex = 0; // Menyimpan indeks data yang akan ditambahkan
+
+        // Fungsi untuk menambahkan data ke tabel satu per satu
+        function tambahDataBaru() {
+            var tabelbaru = document.querySelector("#tbBaru");
+
+            if (currentIndex < jsonData.nakes2018.length) {
+                var data = jsonData.nakes2018[currentIndex];
+
+                var newRow = tabelbaru.insertRow(tabelbaru.rows.length);
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+                var cell3 = newRow.insertCell(2);
+                var cell4 = newRow.insertCell(3);
+
+                cell1.innerHTML = `<td>${data.tahun}</td>`;
+                cell2.innerHTML = `<td>${data.wilayah}</td>`;
+                cell3.innerHTML = `<td>${data.tenaga_kesehatan}</td>`;
+                cell4.innerHTML = `<td>${data.jumlah}</td>`;
+
+                currentIndex++; // Pindahkan ke data berikutnya
+				
+            } else {
+			
+			var pesanSelesai = document.createElement("p");
+			pesanSelesai.textContent = "Row sudah selesai / habis";
+			
+			// Dapatkan tabel dan tambahkan pesan setelah tabel
+			var tabelSelesai = document.querySelector("#tbBaru");
+			tabelSelesai.parentNode.insertBefore(pesanSelesai, tabelSelesai.nextSibling);
+						
+			}
+
+        }
+    </script>
+</body>
+</html>

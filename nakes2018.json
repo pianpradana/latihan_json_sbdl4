@@ -1,0 +1,82 @@
+{
+    "nakes2018": [
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Dokter",
+            "jumlah": 53
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Perawat",
+            "jumlah": 80
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Bidan",
+            "jumlah": 50
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Farmasi",
+            "jumlah": 14
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Kepulauan Seribu",
+            "tenaga_kesehatan": "Ahli Gizi",
+            "jumlah": 6
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Dokter",
+            "jumlah": 4006
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Perawat",
+            "jumlah": 6227
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Bidan",
+            "jumlah": 1496
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Farmasi",
+            "jumlah": 1610
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Selatan",
+            "tenaga_kesehatan": "Ahli Gizi",
+            "jumlah": 192
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Timur",
+            "tenaga_kesehatan": "Dokter",
+            "jumlah": 3244
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Timur",
+            "tenaga_kesehatan": "Perawat",
+            "jumlah": 5439
+        },
+        {
+            "tahun": 2018,
+            "wilayah": "Jakarta Timur",
+            "tenaga_kesehatan": "Bidan",
+            "jumlah": 1566
+        }
+    ]
+}
